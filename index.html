@@ -7,13 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@622&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5a6ef9e285.js" crossorigin="anonymous"></script>
 
@@ -24,22 +17,29 @@
     <header>
         <a>S'inscrire</a>
 
-        <ul>
-            <style>A {text-decoration: none;} </style>
-            <li><a href="#hebergements">Hébergements</a></li>
+        <ul id="sommaire">
+            <li><a href="#hebergements">  Hébergements  </a></li>
             <li><a href="#activites">Activités</a></li>
         </ul>  
         
         <img src="images/logo/Reservia.svg" alt="Logo Reservia">
         <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
         <p>En plein centre ville ou en pleine nature</p>
+
+        <div id="filtres">
+            <h4>Filtres</h4></li>
+            <a href="#" class="bouton"><div class="bulle"><i class="fas fa-money-bill-wave"></i></div><h4>Economique</h4></a>   
+            <a href="#" class="bouton"><div class="bulle"><i class="fas fa-child"></i></div><h4>Familial</h4></a>
+            <a href="#" class="bouton"><div class="bulle"><i class="fas fa-heart"></i></div><h4>Romantique</h4></a>
+            <a href="#" class="bouton"><div class="bulle"><i class="fas fa-dog"></i></div><h4>Animaux autorisés</h4></a>
+        </div>
+
+
+
         <div class="bulle"><i class="fas fa-info"></i></div>
-        
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        <i class="fas fa-dog"></i>
-        <i class="fas fa-heart"></i>
-        <i class="fas fa-child"></i>
-        <i class="fas fa-money-bill-wave"></i>
+        
+    
         <i class="fas fa-map-marker-alt"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-search"></i>
@@ -49,10 +49,11 @@
 
     <section id="hebergements">
 
-        <div class="heb">
+        <div id="heb">
             <h3>Hébergements à Marseille</h3>
             <div class="flex">
                 <article class="article1" >
+                    <a href="#Auberge la Cannebière"></a>
                     <div style="background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg)"> 
                     </div>
                     <h3>Auberge la Cannebière</h3>
@@ -61,6 +62,7 @@
                 </article>
 
                 <article class="article1" >
+                    <a href="#Hôtel du port"></a>
                     <div style="background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg)"> 
                     </div>
                     <h3>Hôtel du port</h3>
@@ -69,6 +71,7 @@
                 </article>
 
                 <article class="article1" >
+                    <a href="#Hôtel Les mouettes"></a>
                     <div style="background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg)"> 
                     </div>
                     <h3>Hôtel Les mouettes</h3>
@@ -77,6 +80,7 @@
                 </article>
 
                 <article class="article1" >
+                    <a href="#Hôtel de la mer"></a>
                     <div style="background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg)"> 
                     </div>
                     <h3>Hôtel de la mer</h3>
@@ -85,6 +89,7 @@
                 </article>
 
                 <article class="article1" >
+                    <a href="#Auberge Le Panier"></a>
                     <div style="background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg)"> 
                     </div>
                     <h3>Auberge Le Panier</h3>
@@ -93,6 +98,7 @@
                 </article>
 
                 <article class="article1" >
+                    <a href="#Hôtel chez Amina"></a>
                     <div style="background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg)"> 
                     </div>
                     <h3>Hôtel chez Amina</h3>
@@ -103,10 +109,12 @@
             <p>Afficher plus</p>
         </div>
  
-        <div class="pop">
-            <h3>Les plus populaires <i class="fas fa-chart-line"></i></h3>
-            
+        <div id="pop">
+            <i class="fas fa-chart-line"></i>
+            <h3>Les plus populaires </h3>
+
                 <article class="article2" >
+                    <a href="#Hôtel Le soleil du matin"></a>
                     <div style="background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg)"> 
                     </div>
                     <h3>Hôtel Le soleil du matin</h3>
@@ -115,6 +123,7 @@
                 </article>
 
                 <article class="article2" >
+                    <a href="#Au coeur de l'eau Chanbres d'hôtes"></a>
                     <div style="background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg)"> 
                     </div>
                     <h3>Au coeur de l'eau Chanbres d'hôtes</h3>
@@ -123,6 +132,7 @@
                 </article>
 
                 <article class="article2" >
+                    <a href="#Hôtel Tout bleu et Blanc"></a>
                     <div style="background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg)"> 
                     </div>
                     <h3>Hôtel Tout bleu et Blanc</h3>
