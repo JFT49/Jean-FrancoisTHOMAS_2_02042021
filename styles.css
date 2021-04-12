@@ -31,7 +31,8 @@ h5 {    font-size: 0.8em;   }
 /* HEADER  */
 
 header {
-    padding: 50px 50px 0 50px;
+    padding: 50px 50px 0 0;
+    margin-left: 50px;
 }
 
 header > a {
@@ -66,12 +67,12 @@ header > a {
     border-top: 2px solid var(--bleu);
 } 
 
-header > p {
-    margin-top: 10px;
-}
-
 header > h2 {
     margin-top: 30px;
+}
+
+header > p {
+    margin-top: 10px;
 }
 
 /* HEADER BARRE DE RECHERCHE */
@@ -141,7 +142,7 @@ form input[type="submit"]
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    width:inherit;
+    width: auto;
     height: 50px;
     border-radius: 25px;
     border: 2px solid rgb(216, 216, 216);
@@ -214,8 +215,6 @@ form input[type="submit"]
     margin-bottom: 23px;
 }
 
-/* SOUS-SECTJION HEBERGEMENT RESULTATS*/
-
 #hebergements {                 
     margin-top: 37px;
     margin-left: 50px;
@@ -228,6 +227,8 @@ form input[type="submit"]
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+/* SOUS-SECTJION HEBERGEMENT RESULTATS*/
 
 #heb {
     box-sizing: border-box;
@@ -346,9 +347,10 @@ form input[type="submit"]
 }
 
 .act {
-    width: 1380px;
-    height: 486px;
     margin-top: 27px;
+    width: auto;
+    max-width: 1380px;
+    height: 486px;
 }
 
 .flex2 {

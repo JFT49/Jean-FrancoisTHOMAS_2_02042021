@@ -1,0 +1,127 @@
+/* CSS MEDIA SMARTPHONE (IPHONE 8) */
+
+@media only screen and (max-width: 500px) {
+
+/* HEADER  */
+
+header {
+    padding: 32px 21px 0 0;
+    margin-left: 21px;
+    width: inherit;
+}
+
+header > a {
+    margin-top: 15px;
+}
+
+#sommaire li {
+    margin-right: 0;
+    padding: 20px;
+}
+
+#sommaire li a {
+    border-bottom: 2px solid var(--bleu);
+}
+#sommaire li a:first-child {
+    padding: 50px;
+}
+#sommaire li a:last-child {
+    padding: 13px;
+}
+
+#sommaire li a:hover {
+    border-top: 0px;
+} 
+
+header > h2 {
+    margin-top: 100px;
+}
+
+/* HEADER BOUTONS FILTRES*/
+
+#filtres {
+    flex-flow: wrap;
+    width: 400px;
+}
+
+#filtres > h4 {
+    margin-right: 500px;
+}
+
+.bouton {
+    margin: 10px 10px 0 0;
+}
+
+/* SECTJION HEBERGEMENT */
+
+#hebergements {                 
+    flex-flow: column-reverse;
+    margin-left: 0px;
+    width: 375px;
+    margin-left: 0;
+}
+
+/* SOUS-SECTJION HEBERGEMENT LES PLUS POPULAIRES*/
+
+#pop {
+    width: auto;
+    border-radius: 0;
+    padding: 47px 10px 0 10px;
+    margin-left: 0px;
+}
+
+.article2 {
+    width: 302px;
+}
+
+.article2 h5, .article2 a  {
+    margin: 15px 0 0 0;
+}
+
+
+
+/* SOUS-SECTJION HEBERGEMENT RESULTATS*/
+
+#heb {
+    background-color: white;
+    width: 600px;
+    height: auto;
+    margin-right: 0;
+    padding: 47px 0 0 0;
+}
+
+.article1 {
+    width: 302px;
+}
+
+.article1 div {
+    width: 292px;
+}
+
+/* ACTIVITE */
+
+#activites {
+    margin-left: 10px;
+}
+
+.act {
+    height: auto;
+}
+
+.flex2 {
+    justify-content: center;
+}
+
+.article {
+    margin-bottom: 22px;
+}
+
+ .h1, .h2, .h3, .h4, .h5 {
+    height: 169px;
+ }
+
+ .m1, .m2, .m3, .m4, .m5 {
+    margin-top: 112px;
+ }
+
+}
