@@ -1,0 +1,35 @@
+/* CSS MEDIA TABLETTE */
+
+@media only screen and (max-width: 1400px) {
+
+/* SOUS-SECTJION HEBERGEMENT LES PLUS POPULAIRES*/
+
+#pop {
+    width: 880px;
+    height: auto;
+    margin-left: 40px;
+}
+
+#pop .flex {
+    justify-content: space-around;
+}
+
+/* ACTIVITE */
+
+.act {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ht1, .ht2, .ht3, .ht4, .ht5 {
+    height: 210px;
+ }
+
+ .m1, .m2, .m3, .m4, .m5 {
+    margin-top: 153px;
+ }
+
+}

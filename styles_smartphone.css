@@ -1,6 +1,6 @@
 /* CSS MEDIA SMARTPHONE (IPHONE 8) */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 685px) {
 
 /* HEADER  */
 
@@ -70,8 +70,6 @@ form button i {
     margin-right: 500px;
 }
 
-
-
 /* SECTJION HEBERGEMENT */
 
 #hebergements {                 
@@ -108,8 +106,6 @@ form button i {
 .article2 h5, .article2 a  {
     margin: 15px 10px 0 0;
 }
-
-
 
 /* SOUS-SECTJION HEBERGEMENT RESULTATS*/
 
@@ -186,4 +182,6 @@ form button i {
 
 footer {
     padding: 30px 0 0 32px;
+}
+
 }
