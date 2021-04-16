@@ -1,40 +1,62 @@
 /* CSS MEDIA SMARTPHONE (IPHONE 8) */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
 
 /* HEADER  */
 
 header {
-    padding: 32px 21px 0 0;
+    padding: 32px 0 0 0;
     margin-left: 21px;
-    width: inherit;
 }
 
 header > a {
     margin-top: 15px;
+    margin-right: 21px;
+}
+
+#sommaire {
+    float: none;
+    margin: 30px 0 0 0;
 }
 
 #sommaire li {
     margin-right: 0;
-    padding: 20px;
+    margin-left: -21px;
 }
 
 #sommaire li a {
-    border-bottom: 2px solid var(--bleu);
-}
-#sommaire li a:first-child {
-    padding: 50px;
-}
-#sommaire li a:last-child {
-    padding: 13px;
+    border-bottom: 2px solid var(--gris);
+    padding: 0 62px 30px 63px;
 }
 
 #sommaire li a:hover {
     border-top: 0px;
+    border-bottom: 2px solid var(--bleu);
 } 
 
 header > h2 {
-    margin-top: 100px;
+    margin-top: 70px;
+}
+
+/* HEADER BARRE DE RECHERCHE */
+
+form input[type="text"] {
+    width: 247px;
+}
+
+form input[type="submit"] {
+    background-color: rgba(0, 0, 0, 0.0);
+    color:  rgba(0, 0, 0, 0.0);
+    width: 0;
+}
+
+form button {
+    background-color:  var(--bleu);
+    margin-right: 21px;
+}
+
+form button i {
+    color: white;
 }
 
 /* HEADER BOUTONS FILTRES*/
@@ -48,34 +70,43 @@ header > h2 {
     margin-right: 500px;
 }
 
-.bouton {
-    margin: 10px 10px 0 0;
-}
+
 
 /* SECTJION HEBERGEMENT */
 
 #hebergements {                 
-    flex-flow: column-reverse;
-    margin-left: 0px;
-    width: 375px;
-    margin-left: 0;
+    margin: 0px;
+    width: auto;
+}
+
+.flex {
+    justify-content: center;
 }
 
 /* SOUS-SECTJION HEBERGEMENT LES PLUS POPULAIRES*/
 
 #pop {
-    width: auto;
+    width: 100%;
     border-radius: 0;
-    padding: 47px 10px 0 10px;
-    margin-left: 0px;
+    padding: 47px 0 0 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#pop h3 {
+    margin-left: 20px;
+}
+
+#pop > i {
+    margin-right: 20px;
 }
 
 .article2 {
-    width: 302px;
+    width: 335px;
 }
 
 .article2 h5, .article2 a  {
-    margin: 15px 0 0 0;
+    margin: 15px 10px 0 0;
 }
 
 
@@ -87,36 +118,55 @@ header > h2 {
     width: 600px;
     height: auto;
     margin-right: 0;
+    margin-left: 0;
     padding: 47px 0 0 0;
 }
 
+#heb h3 {
+    margin-left: 20px;
+}
+
+#heb h4 {
+    margin-left: 20px;
+}
+
+
 .article1 {
-    width: 302px;
+    width: 335px;
 }
 
 .article1 div {
-    width: 292px;
+    width: 325px;
+}
+
+.article1 a:first-child {                               /*carte cliquable*/
+    width: 335px;
 }
 
 /* ACTIVITE */
 
 #activites {
-    margin-left: 10px;
+    margin-right: 0px;
+}
+
+#activites > h1{
+    margin-left: 20px;
 }
 
 .act {
+    margin: 27px 0 0 0;
     height: auto;
-}
-
-.flex2 {
+    flex-direction:row;
     justify-content: center;
 }
 
-.article {
+.act article {
+    margin-left: 0;
     margin-bottom: 22px;
+    width: 335px;
 }
 
- .h1, .h2, .h3, .h4, .h5 {
+ .ht1, .ht2, .ht3, .ht4, .ht5 {
     height: 169px;
  }
 
@@ -124,4 +174,16 @@ header > h2 {
     margin-top: 112px;
  }
 
+ .act article div:last-child {
+    width: 335px;
+}
+
+.act article a{                           /*carte cliquable*/
+    width: 335px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px 0 0 32px;
 }

@@ -36,10 +36,10 @@ header {
 }
 
 header > a {
+    margin-top: 4px;
     float: right;
     color: var(--bleu);
     font-weight: bold; 
-    margin-top: 4px;
 }
 
 #sommaire {
@@ -47,8 +47,8 @@ header > a {
 }
 
 #sommaire li {
-    display: inline-block;
     margin-right: 80px;
+    display: inline;
 }
 
 #sommaire li a {
@@ -69,6 +69,7 @@ header > a {
 
 header > h2 {
     margin-top: 30px;
+    margin-right: 60px;
 }
 
 header > p {
@@ -78,9 +79,9 @@ header > p {
 /* HEADER BARRE DE RECHERCHE */
 
 form {
-    display: flex;
-    align-items: center;
     margin-top: 19px;
+    display: flex;
+    align-items: baseline; 
 }
 
 form div {
@@ -97,11 +98,10 @@ form div i {
     margin: auto;
 }
 
-form input[type="text"]
-{
-    box-sizing: border-box;
-    padding-left: 17px;
+form input[type="text"] {
     margin: 0 -1px 0 -1px;
+    padding-left: 17px;
+    box-sizing: border-box;
     width: 234px;
     height: 51px;
     border: 1px solid var(--gris);
@@ -126,28 +126,43 @@ form input[type="submit"]
     font-size: 18px;
 }
 
+form button {
+    width: 51px;
+    height: 51px;
+    border-radius: 13px;
+    margin-left: -13px;
+    border: 0px;
+    background-color:  rgba(0, 0, 0, 0.0);
+}
+
+form button i {
+    color: rgba(0, 0, 0, 0.0);
+    font-size: 17px;
+}
+
 /* HEADER BOUTONS FILTRES*/
 
 #filtres {
+    margin-top: 31px;
     display: flex;
     align-items: center;
-    margin-top: 31px;
+    flex-flow: wrap;
 }
 
 #filtres > h4 {
     font-size: 91%;
+    margin-right: 24px;
 }
 
 .bouton {
+    margin: 10px 24px 0 0;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    width: auto;
     height: 50px;
     border-radius: 25px;
     border: 2px solid rgb(216, 216, 216);
     text-decoration: none;
-    margin-left: 24px;
 }
 
 .bouton h4 {
@@ -162,13 +177,13 @@ form input[type="submit"]
 }
 
 .bulle {
+    margin-left: -2px;
     display: flex;
     box-sizing: border-box;
     background-color: var(--bleuclair);
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    margin-left: -2px;
 }
 
 .bulle i {
@@ -179,19 +194,20 @@ form input[type="submit"]
 /* HEADER LIGNE INFO */
 
 #info {
+    margin-top: 37px;
+    margin-right: 40px;
     display: flex;
     align-items: center;
-    margin-top: 37px;
 }
 
 .rond {
+    margin-right: 12px;
     display: flex;
     box-sizing: border-box;
     width: 24px;
     height: 24px;
     border-radius: 12px;
     border: 1px solid rgb(216, 216, 216);
-    margin-right: 12px;
 }
 
 .rond i {
@@ -216,48 +232,47 @@ form input[type="submit"]
 }
 
 #hebergements {                 
-    margin-top: 37px;
-    margin-left: 50px;
-    display: inline-flex;
-    width: 1340px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
 }
 
 .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* SOUS-SECTJION HEBERGEMENT RESULTATS*/
 
 #heb {
+    padding: 47px 40px 20px 40px;
+    margin: 37px 40px 0 40px;
     box-sizing: border-box;
     background-color: var(--gris);
-    width: 880px;
-    height: 624px;
+    max-width: 880px;
+    min-height: 624px;
     border-radius: 16px;
-    padding: 47px 40px 0 40px;
-    margin-right: 40px;
 }
 
 .article1 {
+    margin: 0 10px 30px 10px;
     background-color: white;
     width: 246px;
     height: 199px;
     border-radius: 16px;
     box-sizing: border-box;
-    margin-bottom: 30px;
     box-shadow: 0px 4px 10px var(--ombre);
 }
 
 .article1 div {
+    margin: 5px 5px 0 5px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 236px;
     height: 114px;
     border-radius: 10px 10px 0px 0px;
-    margin: 5px 5px 0 5px;
 }
 
 .article1 h5, .article1 a, .article1 p {
@@ -265,9 +280,9 @@ form input[type="submit"]
 }
 
 .article1 a:first-child {                               /*carte cliquable*/
+    margin: 0;
     display: block;
     position: absolute;
-    margin: 0;
     background-color: rgba(0, 0, 0, 0.0);               /*masque transparent*/
     width: 246px;
     height: 199px;
@@ -281,30 +296,33 @@ form input[type="submit"]
 /* SOUS-SECTJION HEBERGEMENT LES PLUS POPULAIRES*/
 
 #pop {
+    padding: 47px 37px 0 37px;
+    margin-top: 37px;
+    margin-right: 40px;
     box-sizing: border-box;
     background-color: var(--gris);
     width: 420px;
     height: 624px;
     border-radius: 16px;
-    padding: 47px 37px 0 37px;
 }
 
 #pop > i {
-    float: right;
     padding-top: 5px;
+    float: right;
 }
 
 .article2 {
+    margin-bottom: 33px;
     background-color: white;
     width: 343px;
     height: 144px;
     border-radius: 16px;
     box-sizing: border-box;
-    margin-bottom: 33px;
     box-shadow: 0px 4px 10px var(--ombre);
 }
 
 .article2 div {
+    margin: 5px 21px 5px 5px;
     float: left;
     background-repeat: no-repeat;
     background-position: center;
@@ -312,7 +330,6 @@ form input[type="submit"]
     width: 127px;
     height: 134px;
     border-radius: 10px 0px 0px 10px;
-    margin: 5px 21px 5px 5px;
 }
 
 .article2 h5, .article2 a  {
@@ -320,14 +337,14 @@ form input[type="submit"]
 }
 
 .article2 p {
-    margin: 44px 35px 0 0;
+    margin: 44px 0 0 0;
 }
 
 
 .article2 a:first-child {                           /*carte cliquable*/
+    margin: 0;
     display: block;
     position: absolute;
-    margin: 0;
     background-color: rgba(0, 0, 0, 0.0);          /*masque transparent*/
     width: 343px;
     height: 144px;
@@ -342,60 +359,60 @@ form input[type="submit"]
 /* ACTIVITE */
 
 #activites {
-    margin-left: 50px;
-    margin-top: 65px;
+    margin: 65px 40px 0 0;
+}
+
+#activites > h1 {
+    margin-left: 40px;
 }
 
 .act {
-    margin-top: 27px;
-    width: auto;
+    margin: 27px auto 0 auto;
     max-width: 1380px;
     height: 486px;
-}
-
-.flex2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.article {
+.act article {
+    margin-bottom: 40px;
+    margin-left: 40px;
     width: 302px;
     border-radius: 16px;
     box-sizing: border-box;
-    margin-bottom: 40px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.h1 {   height: 446px;  }            /*taille des carte activités*/
+.ht1 {   height: 446px;  }            /*taille des carte activités*/
 .m1 {   margin-top: 389px;  }       /*position titre des cartes*/
 
-.h2 {   height: 237px;  }
+.ht2 {   height: 237px;  }
 .m2 {   margin-top: 180px; }
 
-.h3 {   height: 169px;  }
+.ht3 {   height: 169px;  }
 .m3 {   margin-top: 112px; }
 
-.h4 {   height: 196px;  }
+.ht4 {   height: 196px;  }
 .m4 {   margin-top: 139px; }
 
-.h5 {   height: 210px;  }
+.ht5 {   height: 210px;  }
 .m5 {   margin-top: 153px; }
 
-.article div:last-child {
+.act article div:last-child {
+    padding: 20px 0 0 20px;
     background-color: white;
     width: 302px;
     height: 57px;
     border-radius: 0px 0px 16px 16px;
     box-shadow: 0px 4px 10px var(--ombre);
     box-sizing: border-box;
-    padding: 20px 0 0 20px;
 }
 
-.article a{                           /*carte cliquable*/
+.act article a{                           /*carte cliquable*/
     display: block;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.0);          /*masque transparent*/
@@ -403,27 +420,27 @@ form input[type="submit"]
     border-radius: 16px;
 }
 
-.article a:hover {   
+.act article a:hover {   
     background-color: rgba(0, 0, 0, 0.01); 
 }  
 
 /* FOOTER */
 
 footer {
+    padding: 30px 0 0 50px;
+    margin : 22px auto 0 auto;
     background-color: var(--gris);
     position: absolute;
     bottom: auto;
     height: auto;
     width: 100%;
-    padding: 30px 0 0 50px;
-    margin-top: 22px;
 }
 
 footer ul {
+    margin-bottom: 40px;
     list-style: none;
     float: left;
-    width: 470px;
-    margin-bottom: 40px;
+    width: 420px;
 }
 
 footer ul li {
