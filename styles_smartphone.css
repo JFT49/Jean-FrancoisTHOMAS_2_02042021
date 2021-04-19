@@ -64,7 +64,7 @@ form button i {
 
 /* HEADER BOUTONS FILTRES*/
 
-#filtres > h4 {
+#filtres > h3 {
     margin-right: 500px;
 }
 
@@ -72,7 +72,7 @@ form button i {
     margin-right: 10px;
 }
 
-.bouton h4 {
+.bouton h3 {
     font-size: 0.95em;
 }
 
@@ -90,13 +90,12 @@ form button i {
 /* SOUS-SECTJION HEBERGEMENT LES PLUS POPULAIRES*/
 
 #pop {
-    width: 100%;
     border-radius: 0;
-    padding: 47px 0 0 0;
+    padding: 47px 0 25px 0;
     margin: 37px 0 0 0;
 }
 
-#pop h3 {
+#pop h2 {
     margin-left: 20px;
 }
 
@@ -106,10 +105,15 @@ form button i {
 
 .article2 {
     width: 335px;
+    margin-bottom: 11px;
 }
 
-.article2 h5, .article2 a  {
+.article2 h4, .article2 a  {
     margin: 15px 10px 0 0;
+}
+
+.article2 i {
+    font-size: 12px;    /* taille de l'icone */
 }
 
 /* SOUS-SECTJION HEBERGEMENT RESULTATS*/
@@ -119,20 +123,16 @@ form button i {
     width: 600px;
     height: auto;
     margin: 37px 0 0 0;
-    padding: 47px 0 0 0;
+    padding: 0;
 }
 
-#heb h3 {
+#heb h2,#heb > h4 {
     margin-left: 20px;
 }
-
-#heb h4 {
-    margin-left: 20px;
-}
-
 
 .article1 {
     width: 335px;
+    margin-bottom: 12px;
 }
 
 .article1 div {
@@ -143,13 +143,17 @@ form button i {
     width: 335px;
 }
 
+.article1 i {
+    font-size: 12px;    /* taille de l'icone */
+}
+
 /* ACTIVITE */
 
 #activites {
     margin-right: 0px;
 }
 
-#activites > h3{
+#activites > h2 {
     margin-left: 20px;
 }
 
@@ -166,18 +170,18 @@ form button i {
 }
 
  .ht1, .ht2, .ht3, .ht4, .ht5 {
-    height: 169px;
+    height: 190px;
  }
 
  .m1, .m2, .m3, .m4, .m5 {
-    margin-top: 112px;
+    margin-top: 133px;
  }
 
  #act article div:last-child {
     width: 335px;
 }
 
-#act article a{                           /*carte cliquable*/
+#act article a{                  /*carte cliquable*/
     width: 335px;
 }
 
