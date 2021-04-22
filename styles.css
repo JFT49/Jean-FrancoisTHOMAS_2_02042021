@@ -15,8 +15,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-
-
 /* HEADER  */
 
 header {
@@ -157,7 +155,6 @@ form button i {
 .bouton h3 {
     margin: 0 25px 0 16px;
     color: black;
-    font-size: 1.1em;
 }
 
 .bouton:hover {
@@ -229,14 +226,14 @@ form button i {
 .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* SOUS-SECTJION HEBERGEMENT RESULTATS*/
 
 #heb {
     padding: 47px 40px 20px 40px;
-    margin: 37px 40px 0 40px;
+    margin: 37px 0px 0 0px;
     box-sizing: border-box;
     background-color: var(--gris);
     max-width: 880px;
@@ -297,7 +294,7 @@ form button i {
 
 #pop {
     padding: 47px 37px 0 37px;
-    margin: 37px 40px 0 0;
+    margin: 37px 0px 0 40px;
     box-sizing: border-box;
     background-color: var(--gris);
     width: 420px;

@@ -1,11 +1,6 @@
 /* CSS MEDIA SMARTPHONE (IPHONE 8) */
 
-@media only screen and (max-width: 685px) {
-
-
-/*Font */
-
-
+@media only screen and (max-width: 700px) {
 
 /* HEADER  */
 
@@ -73,7 +68,8 @@ form button i {
 }
 
 .bouton h3 {
-    font-size: 0.95em;
+    margin: 0 22px 0 12px;
+    font-size: 0.98em;
 }
 
 /* SECTJION HEBERGEMENT */
@@ -106,6 +102,7 @@ form button i {
 .article2 {
     width: 335px;
     margin-bottom: 11px;
+    margin-right: 0;
 }
 
 .article2 h4, .article2 a  {
@@ -133,13 +130,14 @@ form button i {
 .article1 {
     width: 335px;
     margin-bottom: 12px;
+    margin-right: 0;
 }
 
 .article1 div {
     width: 325px;
 }
 
-.article1 a:first-child {                               /*carte cliquable*/
+.article1 a:first-child {  /*carte cliquable*/
     width: 335px;
 }
 
@@ -158,7 +156,7 @@ form button i {
 }
 
 #act {
-    margin: 27px 0 0 0;
+    margin: 27px 10px 0 10px;
     height: auto;
     flex-direction:row;
     justify-content: center;
@@ -181,7 +179,7 @@ form button i {
     width: 335px;
 }
 
-#act article a{                  /*carte cliquable*/
+#act article a{     /*carte cliquable*/
     width: 335px;
 }
 

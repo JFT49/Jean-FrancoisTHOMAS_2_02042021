@@ -7,11 +7,31 @@
 #pop {
     width: 880px;
     height: auto;
-    margin-left: 40px;
+    margin: 37px 40px 0 40px;
+    padding-right: 17px;
+}
+
+#pop > i {
+    margin-right: 20px;
 }
 
 #pop .flex {
     justify-content: space-around;
+}
+
+.article2 {
+margin-right: 20px;
+}
+
+/* SOUS-SECTJION HEBERGEMENT RESULTATS*/
+
+#heb {
+    margin: 37px 40px 0 40px;
+    padding-right: 20px;
+}
+
+.article1 {
+    margin: 0 20px 30px 0;
 }
 
 /* ACTIVITE */
